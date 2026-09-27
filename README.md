@@ -29,47 +29,20 @@ DP-AuNPs/
 ├── potential/
 │   ├── frozen_model.pb        # trained DeePMD model
 │   ├── input.json             # training input parameters
-│   ├── training_script.sh     # how the model was trained
 │   └── checkpoints/           # (optional) training checkpoints
 │
 ├── data/
-│   ├── README.md              # dataset description
 │   ├── training/              # training configurations
-│   │   ├── bulk/
-│   │   ├── surfaces/
-│   │   ├── nanoparticles/
-│   │   └── liquid/
 │   ├── validation/            # validation configurations
-│   └── raw_dft/               # (optional) raw VASP outputs
+│   └── dft/               # (optional) raw VASP outputs
 │
 ├── examples/
 │   ├── lammps/
-│   │   ├── in.lammps
-│   │   ├── data.au
-│   │   └── run.sh
-│   ├── python/
-│   │   ├── run_md.py
-│   │   └── compute_properties.py
-│   └── ase/
-│       └── example_ase.py
 │
-├── scripts/
-│   ├── train.py               # run training
-│   ├── validate.py            # validate the potential
-│   ├── plot_figures.py        # reproduce figures from the paper
-│   └── utils.py
-│
-├── docs/
-│   ├── methodology.md         # DFT and ML methods
-│   ├── data_description.md    # dataset details
-│   ├── validation.md          # validation results
-│   └── images/
-│
-├── tests/
-│   ├── test_potential.py
-│   └── test_examples.py
-│
-└── .github/
-    └── workflows/
-        └── ci.yml
+└── scripts/
+    ├── train.py               # run training
+    ├── validate.py            # validate the potential
+    ├── plot_figures.py        # reproduce figures from the paper
+    └── utils.py
+
 ```
