@@ -17,3 +17,66 @@ The model is based on the Deep Potential Smooth Edition (DeepPot-SE) descriptor 
 - **Transferable** across bulk, surfaces, nanoparticles, and liquid gold.
 - **Ready-to-use** with LAMMPSand Python.
 - **Open data**: all weights, training configurations, and validation scripts are provided.
+
+## Repository Structure
+
+```
+DP-AuNPs/
+├── README.md
+├── LICENSE
+├── LICENSE-DATA
+├── CITATION.cff
+├── requirements.txt
+├── environment.yml
+├── .gitignore
+├── .gitattributes
+│
+├── potential/
+│   ├── frozen_model.pb        # trained DeePMD model
+│   ├── input.json             # training input parameters
+│   ├── training_script.sh     # how the model was trained
+│   └── checkpoints/           # (optional) training checkpoints
+│
+├── data/
+│   ├── README.md              # dataset description
+│   ├── training/              # training configurations
+│   │   ├── bulk/
+│   │   ├── surfaces/
+│   │   ├── nanoparticles/
+│   │   └── liquid/
+│   ├── validation/            # validation configurations
+│   └── raw_dft/               # (optional) raw VASP outputs
+│
+├── examples/
+│   ├── lammps/
+│   │   ├── in.lammps
+│   │   ├── data.au
+│   │   └── run.sh
+│   ├── python/
+│   │   ├── run_md.py
+│   │   └── compute_properties.py
+│   └── ase/
+│       └── example_ase.py
+│
+├── scripts/
+│   ├── train.py               # run training
+│   ├── validate.py            # validate the potential
+│   ├── plot_figures.py        # reproduce figures from the paper
+│   └── utils.py
+│
+├── docs/
+│   ├── methodology.md         # DFT and ML methods
+│   ├── data_description.md    # dataset details
+│   ├── validation.md          # validation results
+│   └── images/
+│
+├── tests/
+│   ├── test_potential.py
+│   └── test_examples.py
+│
+└── .github/
+    └── workflows/
+        └── ci.yml
+```
+
+> **Note:** The structure above is a suggestion. Replace file names with your actual files.
