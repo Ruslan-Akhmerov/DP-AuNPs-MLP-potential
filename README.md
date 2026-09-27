@@ -78,5 +78,3 @@ DP-AuNPs/
     └── workflows/
         └── ci.yml
 ```
-
-> **Note:** The structure above is a suggestion. Replace file names with your actual files.
