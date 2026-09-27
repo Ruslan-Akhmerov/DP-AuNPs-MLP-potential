@@ -24,12 +24,7 @@ The model is based on the Deep Potential Smooth Edition (DeepPot-SE) descriptor 
 DP-AuNPs/
 ├── README.md
 ├── LICENSE
-├── LICENSE-DATA
-├── CITATION.cff
-├── requirements.txt
-├── environment.yml
 ├── .gitignore
-├── .gitattributes
 │
 ├── potential/
 │   ├── frozen_model.pb        # trained DeePMD model
