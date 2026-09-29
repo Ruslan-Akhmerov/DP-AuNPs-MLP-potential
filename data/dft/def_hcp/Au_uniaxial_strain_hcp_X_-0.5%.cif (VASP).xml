@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<!DOCTYPE MDRESULTS PUBLIC "-//MD//DTD MDRESULTS 1.0" "http://materialsdesign.com/DTD/mdresults_1_0.dtd">
+
+<MDRESULTS>
+  <System id="initial">
+    <Date> 2 Mar 2025 19:44:56 GMT</Date>
+    <Characterization>
+      <PropertyValue property="symmetry" type="text" units="">P1</PropertyValue>
+      <PropertyValue property="setting" type="text" units="">P1</PropertyValue>
+      <PropertyValue property="empirical formula" type="text" units="">Au</PropertyValue>
+      <PropertyValue property="primitive cell formula" type="text" units="">Au2</PropertyValue>
+      <PropertyValue property="primitive Z" type="text" units="">2</PropertyValue>
+    </Characterization>
+  </System>
+  <Calculation id="initial">
+    <Date> 2 Mar 2025 19:44:56 GMT</Date>
+    <System>initial</System>
+    <Results>
+      <PropertyValue property="VASP energy" type="float" units="eV">-6.407484</PropertyValue>
+      <PropertyValue property="Fermi energy" type="float" units="eV">8.677700</PropertyValue>
+      <PropertyValue dimensions="3 2" property="atomic derivatives" type="float" units="kJ/mol/m">-1289367548.866 972804080.236 701187678.053
+1289367548.866 -972804080.236 -701187678.053</PropertyValue>
+      <PropertyValue property="cell volume" type="float" units="Ang^3">35.950</PropertyValue>
+      <PropertyValue property="pressure" type="float" units="GPa">-0.048</PropertyValue>
+      <PropertyValue dimensions="6" property="stress" type="float" units="GPa">-0.34167 0.06427 0.42199 -0.04028 -0.03169 0.57515</PropertyValue>
+    </Results>
+  </Calculation>
+</MDRESULTS>
